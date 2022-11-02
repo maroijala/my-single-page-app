@@ -6,22 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my-single-page-app</title>
-    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="https://www.google.com/s2/u/0/favicons?domain=codePen.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Passions+Conflict&family=Roboto+Mono:wght@100;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
     <div class="main-1">
         <nav>
-            <i class="fa-solid fa-hand-fist"></i>
+
+            <p class="onepunch"><span id="one"><i class="fa-solid fa-hand-fist"></i>one</span><span id="punch">punch<i
+                        class="fa-solid fa-hand-fist"></i></span></p>
+
         </nav>
-        <p class="onepunch"> <span id="one">one</span><span id="punch">punch</span></p>
-        <img src="/images/wp4264735-one-punch-man-season-2-wallpapers.png" alt="">
-        <section class='button'>
-            <button class="quotes">one punch Quotes</button>
-            <button class="s-hero">S-Class Heros</button>
+
+
+        <section class='main-view'>
+            <img src="/images/wp4264735-one-punch-man-season-2-wallpapers.png" alt="">
+            <div class="buttons">
+                <!-- <button class="quotes" onclick="location.href='#quotes'" type="button">one punch Quotes</button> -->
+                <a href="#quotes" class="button">One Punch Quotes</a>
+                <a href="#s-hero" class="button">S-Class Heros</a>
+                <!-- <button class="s-hero" onclick="location.href='#s-heros'" type="button">S-Class Heros</button> -->
+            </div>
+
         </section>
     </div>
 
