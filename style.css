@@ -5,11 +5,11 @@
     font-family: 'Balsamiq Sans', cursive;
 }
 
-.main-1 {
+#main-1 {
     height: 100vh;
 }
 
-.slide {
+/* .slide {
     position: absolute;
     top: 0;
     left: 0;
@@ -17,20 +17,22 @@
     height: 100vh;
     z-index: -1;
 
+} */
+
+
+.onepunch {
+    position: absolute;
+    width: 100%;
+    top: 1%;
+    color: #f2f1ef;
+    text-align: center;
+    z-index: 1;
+    /* background-color: #ffba08; */
 }
 
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7%;
-    background: linear-gradient(to bottom, #6d6875, #4a4e69);
-
-}
 
 .main-view {
-    height: 93%;
+    height: 100%;
     background: black;
 }
 
@@ -41,35 +43,73 @@ nav {
     height: 100%;
     opacity: .8;
     object-fit: cover;
-
-    /* height: 100vh; */
 }
 
 .buttons {
     width: 100%;
-    height: 15%;
+    height: 30%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-self: center;
     justify-content: space-between;
+
 }
 
 /* button editing */
 .button {
+
     width: 65%;
     text-align: center;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
     border: #ffba08 .15em solid;
-    padding: .25em 1em;
+    padding: .4em .5em;
     border-radius: .5em;
+    color: #f5f4f2;
+    text-shadow: 0px 2px 5px #f2f1ef;
+    box-shadow: inset 0 0 0.5em 0 #ffba08,
+        0 0 0.5em 0 #ffba08;
+    transition: all .5s;
+}
 
-    color: #ffba08;
+.button:hover {
+    background-color: #ffba08;
+    color: black;
+    text-shadow: none;
+    box-shadow: inset 0 0 1em .1em #ffba08,
+        0 0 1em .1em #ffba08;
+    width: 55%;
+    transition: all .5s;
+}
 
+
+/* page 2 */
+#main-2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e63946;
+    background-color: black;
+}
+
+/* animate pages */
+.main {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(70%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
 }

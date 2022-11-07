@@ -20,28 +20,30 @@
 
 <body>
 
-    <div class="main-1">
-        <nav>
+    <div class="main" id="main-1">
 
+        <section class='main-view'>
             <p class="onepunch"><span id="one"><i class="fa-solid fa-hand-fist"></i>one</span><span id="punch">punch<i
                         class="fa-solid fa-hand-fist"></i></span></p>
 
-        </nav>
-
-
-        <section class='main-view'>
             <img src="/images/wp4264735-one-punch-man-season-2-wallpapers.png" alt="">
             <div class="buttons">
                 <!-- <button class="quotes" onclick="location.href='#quotes'" type="button">one punch Quotes</button> -->
-                <a href="#quotes" class="button">One Punch Quotes</a>
+                <a href="#quotes" class="button" id="quotebut">One Punch Quotes</a>
                 <a href="#s-hero" class="button">S-Class Heros</a>
                 <!-- <button class="s-hero" onclick="location.href='#s-heros'" type="button">S-Class Heros</button> -->
             </div>
 
         </section>
+
     </div>
 
-    <div class="slide"></div>
+    <div class="main" id="main-2">
+        <p class="quo">“A true hero isn’t measured by the size of his strength, but by the strength of his heart.”</p>
+    </div>
+
+
+
 
 
 
@@ -52,7 +54,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
         integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
 </body>
 
 </html>
