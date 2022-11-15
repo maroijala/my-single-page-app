@@ -1,12 +1,12 @@
-const element = document.querySelectorAll('.main')
-
-
+const main = document.querySelectorAll('.main')
+const main2 = document.querySelectorAll('.main2')
+const punch = document.querySelectorAll('.onepunch')
 
 
 const observer = new IntersectionObserver((e) => {
 
     e.forEach((en) => {
-        console.log(en)
+
         if (en.isIntersecting) {
             en.target.classList.add('show')
 
@@ -17,4 +17,6 @@ const observer = new IntersectionObserver((e) => {
 }, { threshold: .1 }
 )
 
-element.forEach((el) => observer.observe(el)) 
+main.forEach((el) => observer.observe(el))
+main2.forEach((el) => observer.observe(el))
+punch.forEach((el) => observer.observe(el))
